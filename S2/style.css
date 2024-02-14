@@ -1,0 +1,83 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: left; 
+    padding: 20px;
+    margin-left: 300px; 
+    margin-top: 200px;
+}
+
+button {
+    width: 200px;
+    height: 60px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid black;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+#btnMonday {
+    background-color: #783194; 
+}
+
+#btnTuesday {
+    background-color: #f79ee3; 
+}
+
+#btnWednesday {
+    background-color: #3498DB; 
+}
+
+#btnThursday {
+    background-color: #5de696 
+}
+
+#btnFriday {
+    background-color: #ffdf5d;
+}
+
+#btnSaturday {
+    background-color: #fa943a; 
+}
+
+#btnSunday {
+    background-color: #e93e3e; 
+}
+
+button:hover {
+    transform: scale(1.2);
+}
+
+.Box {
+    top: 0;
+    left: 50%;
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    border: 1px solid #ccc;
+    opacity: 0;
+    transition: all 0.5s ease;
+    right: 20px;
+
+    animation-name: drop;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+}
+
+
+@keyframes drop {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
